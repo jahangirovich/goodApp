@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/little_gray"
+    android:orientation="vertical"
+    android:theme="@style/AppThemeForDetail"
+    tools:context=".activities.Detail">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:theme="@style/AppTheme.WhiteAccent"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/allItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/ralewaybold"
+            android:gravity="center_horizontal"
+            android:padding="15dp"
+            android:text="Name of "
+            android:textColor="@color/white"
+            android:textSize="19dp" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerView"
+        android:layout_margin="10dp"
+        android:background="@color/white"></android.support.v7.widget.RecyclerView>
+</LinearLayout>
